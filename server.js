@@ -6,7 +6,7 @@ app.use(helmet());
 app.use(express.json());
 
 app.get('/health', (_req, res) => {
-  res.status(200).json({ status: 'UP', timestamp: new Date().toISOString(), author: 'Ferchis' });
+  res.status(200).json({ status: 'UP', timestamp: new Date().toISOString(), author: 'Ferchis 2.0' });
 });
 
 const PORT = process.env.PORT || 3000;
