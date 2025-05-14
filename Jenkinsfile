@@ -4,15 +4,15 @@ pipeline {
     environment {
         NODE_ENV = 'production'
         EC2_USER = 'ubuntu'
-        EC2_IP = '54.167.67.182'
-        REMOTE_PATH = '/home/ubuntu/node-healthcheck'
+        EC2_IP = '54.226.185.55'
+        REMOTE_PATH = '/home/ubuntu/Health'
         SSH_KEY = credentials('ssh-key-ec2')
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/roberto14118927/node-healthcheck.git'
+                git branch: 'main', url: 'https://github.com/Ferchisqs/Health.git'
             }
         }
 
